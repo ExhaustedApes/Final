@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_main);
 
+        // MusicService1 시작
+        Intent serviceIntent1 = new Intent(this, MusicService1.class);
+        startService(serviceIntent1);
+
         startBtn=(Button)findViewById(R.id.buttonStart);
         loginButton=(Button)findViewById(R.id.login);
 
